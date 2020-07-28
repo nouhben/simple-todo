@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="./todostyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>TODO: js app 01</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" name="todo-input" id="todo-input">
+            <button type="submit" class="add-todo-btn">
+                <span>&plus;</span>
+            </button>
+        </form>
+        <div class="todo-wrapper">
+            <div class="todo-container">
+                <ul class="todo-list">
+                    <!--the content will be add wih js-->
+                </ul>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="radio" name="type" id="all" checked>
+                    <label for="all">All</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="type" id="done">
+                    <label for="all">Done</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="type" id="deleted">
+                    <label for="all">Deleted</label>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./todoapp.js"></script>
+</body>
+
+</html>
