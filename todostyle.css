@@ -1,0 +1,138 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #aa903b, #fda085);
+    color: #FFF;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.45rem;
+}
+
+form,
+header {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #FFF;
+}
+
+form button {
+    color: #d88771;
+    cursor: pointer;
+    background: #FFF;
+    transition: all .3s ease-in;
+    outline: none;
+}
+
+form button:hover {
+    background: #d88771ab;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #FFF;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-btn,
+.done-btn {
+    background: #FF6F47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    transition: all .2s ease;
+}
+
+.done-btn {
+    background: rgb(10, 50, 250);
+}
+
+.done-btn:hover {
+    background: rgba(10, 50, 250, 0.404);
+}
+
+.delete-btn:hover {
+    background: rgba(255, 111, 71, 0.527);
+}
+
+.todo-item {
+    padding: 0.5rem;
+}
+
+
+.done li {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+}
+
+.todo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.todo-wrapper form {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.form-group label {
+    padding-left: 1rem;
+}
+
+.form-group form input {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hide {
+    display: none;
+}
